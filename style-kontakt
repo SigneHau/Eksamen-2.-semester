@@ -1,0 +1,125 @@
+/* Containeren for hele kontaktformularen */
+.kontakt-container {
+    max-width: 600px;
+    /* Maks bredde på containeren */
+    margin: 0 auto;
+    /* Centrer containeren vandret */
+    padding: 1rem;
+    /* Indvendig afstand hele vejen rundt */
+    text-align: left;
+    /* Venstrestil tekst og inline-elementer */
+}
+
+/* Afstand mellem hvert felt i formularen */
+.form-felt {
+    margin-bottom: 1rem;
+}
+
+/* Label-teksten over felterne */
+label {
+    display: block;
+    /* Gør label til blokniveau, så det står over input */
+    margin-bottom: 0.25rem;
+    /* Lidt luft under labelen */
+    text-align: left;
+    /* Venstrestil labelen */
+}
+
+/* Tekstfelter og tekstområde */
+input,
+textarea {
+    width: 100%;
+    /* Fylder hele bredden af containeren */
+    padding: 0.5rem;
+    /* Indvendig afstand */
+    font-size: 1rem;
+    /* Gør teksten letlæselig */
+    border: 1px solid #ccc;
+    /* Let grå kant for synlighed */
+    border-radius: 5px;
+    /* Lidt afrundede hjørner */
+    box-sizing: border-box;
+    /* Sørger for padding ikke sprænger layoutet */
+}
+
+/* Knap-styling */
+button {
+    padding: 0.5rem 1rem;
+    /* Indvendig afstand */
+    font-size: 1rem;
+    /* Tekststørrelse */
+    cursor: pointer;
+    /* Gør det til en klikbar håndmarkør */
+    background-color: rgba(138, 153, 139, 1);
+    /* Standard baggrundsfarve */
+    color: black;
+    /* Standard tekstfarve */
+    border: none;
+    /* Fjern kant */
+    border-radius: 10px;
+    /* Runde hjørner */
+    transition: background-color 0.3s, color 0.3s;
+    /* Blød overgang ved hover */
+    display: inline-block;
+    /* Gør knappen påvirkelig af text-align */
+}
+
+/* Knap ved hover */
+button:hover {
+    background-color: rgba(92, 85, 71, 1);
+    /* Mørkere farve ved hover */
+    color: white;
+    /* Hvid tekst ved hover */
+}
+
+/* Statusbesked efter formular sendes */
+#status-besked {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* ---------- RESPONSIVT DESIGN ---------- */
+
+/* Mindre skærme (telefoner) */
+@media (max-width: 600px) {
+    .kontakt-container {
+        padding: 1rem 0.5rem;
+        /* Mindre vandret afstand */
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+        /* Lidt mindre tekststørrelse */
+        padding: 0.4rem;
+        /* Mindre padding, så alt passer */
+    }
+
+    button {
+        width: 100%;
+        /* Knap fylder hele bredden på mobil */
+        font-size: 1rem;
+    }
+}
+
+/* Tablet-størrelse */
+@media (min-width: 601px) and (max-width: 900px) {
+    .kontakt-container {
+        padding: 2rem;
+        /* Lidt mere luft omkring formular */
+    }
+
+    input,
+    textarea {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        font-size: 1.05rem;
+    }
+
+
+
+
+}
